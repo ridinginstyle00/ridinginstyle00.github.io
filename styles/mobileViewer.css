@@ -8,9 +8,8 @@
 	html
 	{
 		background-color: purple;
-		width: device-width;
+		transform: scale(.5);
 	}
-	
 		#header
 		{
 			height: 5vw;

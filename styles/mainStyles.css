@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS styles applied to all views */
+
+html
+{
+	background-image: url(../images/background-Placeholder.jpg);
+	background-size: 100px 100px;
+	background-repeat: repeat;
+	font-size: 2vw;
+	margin: 1vw;
+	margin-top: .5vw;
+}
+
+#headerContainer
+{
+	padding-top: 0.05vw;
+	width: auto;
+	height: auto;
+	background-color: red;
+}
+
+#container
+{
+	background-color: lightcoral;
+	width: auto;
+}
+
+/* End of page */

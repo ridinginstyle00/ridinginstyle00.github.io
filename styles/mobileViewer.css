@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS styles applied only to desktop viewers with a width of 600 pixels or higher */
+
+@media screen and (orientation:landscape) and (max-width:600px)
+{
+	#header
+	{
+		font-size: 2vw;	
+		height: 3vw;
+		background-color: aqua;
+		text-align: center;
+		padding-top: 1vw;
+	}
+}
+
+/* End of page */

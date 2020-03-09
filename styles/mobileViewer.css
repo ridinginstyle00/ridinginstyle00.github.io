@@ -8,11 +8,10 @@
 	html
 	{
 		background-color: purple;
-		transform: scale(.5);
-	}
+	}	
 		#header
 		{
-			height: 5vw;
+			height: 9vw;
 			width: 98%;
 			margin: 1vw;
 			text-align: center;
@@ -34,7 +33,7 @@
 			margin-top: -2.99vw;
 			margin-right: -.1vw;
 			width: auto;
-			height: 160%;
+			height: 140%;
 			float: right;
 		}
 	

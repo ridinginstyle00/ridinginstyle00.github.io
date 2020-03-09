@@ -1,8 +1,5 @@
 @charset "utf-8";
 /* CSS styles applied to all views */
-@-ms-viewport{
-  width: device-width;
-}
 
 html
 {

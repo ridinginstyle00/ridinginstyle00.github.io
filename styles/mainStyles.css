@@ -3,7 +3,6 @@
 
 html
 {
-	background-color: darkgray;
 	font-size: 2vw;
 	margin: 1vw;
 	margin-top: .5vw;
@@ -14,11 +13,6 @@ html
 	padding-top: 0.05vw;
 	width: auto;
 	height: auto;
-}
-
-#container
-{
-	width: auto;
 }
 
 /* End of page */

@@ -1,13 +1,14 @@
 @charset "utf-8";
 /* CSS styles applied only to desktop viewers with a width of 600 pixels or higher */
 
-@media only screen and (max-width: 1024px)
+@media only screen and (max-width: 600px)
 {
 	/* Header data */
 	
-	hrml
+	html
 	{
 		background-color: purple;
+		width: 50%;
 	}
 	
 		#header

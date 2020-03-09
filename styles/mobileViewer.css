@@ -8,7 +8,7 @@
 	html
 	{
 		background-color: purple;
-		width: 50%;
+		width: device-width;
 	}
 	
 		#header

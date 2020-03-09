@@ -33,9 +33,10 @@
 	
 		#header-logo
 		{
-			margin-top: -2.75vw;
+			margin-top: -3vw;
+			margin-right: -.1vw;
 			width: auto;
-			height: 155%;
+			height: 160%;
 			float: right;
 		}
 

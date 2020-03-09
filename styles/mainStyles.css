@@ -3,9 +3,7 @@
 
 html
 {
-	background-image: url(../images/background-Placeholder.jpg);
-	background-size: 100px 100px;
-	background-repeat: repeat;
+	background-color: darkgray;
 	font-size: 2vw;
 	margin: 1vw;
 	margin-top: .5vw;
@@ -16,12 +14,10 @@ html
 	padding-top: 0.05vw;
 	width: auto;
 	height: auto;
-	background-color: red;
 }
 
 #container
 {
-	background-color: lightcoral;
 	width: auto;
 }
 

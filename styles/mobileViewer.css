@@ -3,14 +3,52 @@
 
 @media screen and (orientation:landscape) and (max-width:600px)
 {
-	#header
-	{
-		font-size: 2vw;	
-		height: 3vw;
-		background-color: aqua;
-		text-align: center;
-		padding-top: 1vw;
-	}
+	/* Header data */
+	
+		#header
+		{
+			height: 5vw;
+			width: 98%;
+			margin: 1vw;
+			text-align: center;
+			padding-top: 3vw;
+			margin-bottom: -1.5vw;
+		}
+
+		.headerIMG
+		{
+			margin-top: -2.75vw;
+			width: 100%;
+			height: auto;
+			background-image: url(../images/header-IMG.jpg);
+			background-size: auto 90%;
+		}
+
+		#header-logo
+		{
+			margin-top: -2.99vw;
+			margin-right: -.1vw;
+			width: auto;
+			height: 160%;
+			float: right;
+		}
+	
+		/* Navbar data */
+	
+			.desktopNavBarLI
+			{
+				display: none;
+			}
+	
+		/*End of Navbar data */
+	
+	
+		/*placholder*/
+
+		/*endplaceholder*/
+	
+	
+	/* End of header data */
 }
 
 /* End of page */

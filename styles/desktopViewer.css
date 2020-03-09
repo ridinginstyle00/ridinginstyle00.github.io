@@ -33,7 +33,7 @@
 	
 		#header-logo
 		{
-			margin-top: -3vw;
+			margin-top: -2.99vw;
 			margin-right: -.1vw;
 			width: auto;
 			height: 160%;
@@ -56,13 +56,16 @@
 			{
 				text-align: center;
 				vertical-align: middle;
-				width: 98%;
-				padding-top: .1vw;
-				padding-left: 1vw;
+				background-color: black;
+				margin-left: 1vw;
+				height: 80%;
+				width: 97%;
+				padding-top: .5vw;
+				padding-left: .50vw;
 				padding-bottom: .6vw;
 			}
 
-			.navBarLI
+			.desktopNavBarLI
 			{
 				list-style-type: none;
 				padding-top: .5vw;
@@ -76,7 +79,7 @@
 				font-size: 1.5vw;
 			}
 	
-			.navBarLI:hover
+			.desktopNavBarLI:hover
 			{
 				background-color: white;
 				color: black;
@@ -86,6 +89,7 @@
 			{
 				float: right;
 			}
+	
 		/*End of Navbar data */
 		
 	

@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS styles applied only to desktop viewers with a width of 600 pixels or higher */
 
-@media only screen and (max-width: 1024px)
+@media only screen and (max-width: 1025px)
 {
 	/* Header data */
 	
@@ -11,7 +11,7 @@
 	}	
 		#header
 		{
-			height: 9vw;
+			height: 10vw;
 			width: 98%;
 			margin: 1vw;
 			text-align: center;
@@ -30,10 +30,11 @@
 
 		#header-logo
 		{
+			padding-top: 2.6vw;
 			margin-top: -2.99vw;
 			margin-right: -.1vw;
-			width: auto;
-			height: 140%;
+			width: 25%;
+			height: 76%;
 			float: right;
 		}
 	

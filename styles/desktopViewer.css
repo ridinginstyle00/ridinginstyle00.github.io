@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS styles applied only to desktop viewers with a width of 600 pixels or higher */
 
-@media screen and (min-width:1025px)
+@media screen and (min-width:1026px)
 {
 	/* Outer Header data */
 	html

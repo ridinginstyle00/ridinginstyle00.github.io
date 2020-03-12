@@ -21,7 +21,6 @@ ul li
 {
 	padding: 1vw;
 	padding-bottom: .5vw;
-	border: solid .25vw;
 	border-color: white;
 	text-align: center;
 }
@@ -64,12 +63,13 @@ ul
 .mediumPhoto
 {
 	width: 23.125vw;
-	height: 19vw;
+	height: 42vw;
 }
 
 .mediumPhoto img
 {
-	width: 10vw;	
+	width: 22vw;
+	height: 40vw;
 }
 
 .jText

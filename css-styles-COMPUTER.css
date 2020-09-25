@@ -23,7 +23,7 @@
         padding-bottom: 5vh;
 
         height: auto;
-        width: 50vw;
+        width: 80vw;
         background-color: white;
         border-radius: 5vh;
     }
@@ -31,12 +31,12 @@
     .header
     {
         margin: auto;
-        padding-top: 1vh;
+        padding-top: 5vh;
         background-color: white;
         text-align: center;
-        width: 50vw;
+        width: 80vw;
         font-size: 5vh;
-        line-height: 10vh;
+        line-height: 5vh;
         height: 10vh;
         font-weight: bold;
         border-top-right-radius: 5vh;
@@ -45,10 +45,12 @@
 
     .headerDesc
     {
-        padding-top: 10vh;
+        padding-top: 5vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
         margin: auto;
         text-align: left;
-        width: 40vw;
+        width: 60vw;
         font-size: 3vh;
         line-height: 3vh;
     }
@@ -60,9 +62,10 @@
 
     .siteButton
     {
-        padding-left: 5vw;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
         font-size: 3vh;
-        width: 38vw;
+        width: 75vw;
     }
 
     .siteButton > li

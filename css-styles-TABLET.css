@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1023px) and (min-width: 481px)
+{
+    
+    /* HTML Tag styles */
+    body
+    {
+        background-color: lightgray;
+    }
+
+
+    /* Class Styles */
+    .container
+    {
+        margin: auto;
+        height: 90vh;
+        widtH: 50vw;
+        background-color: blue;
+    }
+
+    .header
+    {
+        color: brown;
+        background-color: lime;
+    }
+
+}

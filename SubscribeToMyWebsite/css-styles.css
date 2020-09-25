@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	background-image: url(images/background.jpg);
+	background-size: cover;
+}
+
+body, body > *
+{
+	background-color: rgba(248, 249, 250, .95);
+}
+
+.form-control
+{
+	width: 18em;
+}
+
+a.submit
+{
+	padding-left: 3em;
+	padding-right: 3em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: mediumblue;
+	color: white;
+	border-radius: 10px;
+	text-decoration: none;
+	margin-left: 2em;
+	margin-top: -.5em;
+}
+
+a.submit:hover
+{
+	background-color: #0233B7;
+}
+
+a.submit:active
+{
+	background-color: mediumblue;
+}

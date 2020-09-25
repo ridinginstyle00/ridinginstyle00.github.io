@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Class styles */
+.title
+{
+	padding-top: 20px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.title > *
+{
+	margin-bottom: -10px;
+}
+
+.form-holder
+{
+	width: 800px;
+	height: auto;
+	margin: auto;
+	background-color: rgba(248, 249, 250, .90);
+	border-radius: 50px;
+}
+
+/* Make all children have the same default padding */
+.form-holder > *, .column1 > *, .column2 > *
+{
+	padding: 10px;
+	padding-left: 20px;
+}
+
+.form-holder > input
+{
+	padding: 10px;
+}
+
+.selection-range
+{
+	padding: 10px;
+	min-width: 279px;
+}
+
+.itemTitle
+{
+	margin-bottom: -10px;
+}
+
+.column1
+{
+	float: left;
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+.endForm
+{
+	height: auto;
+}
+
+.submitBtn
+{
+	padding: 10px;
+	background-color: darkblue;
+	color: white;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+.submitBtn:active
+{
+	background-color: rgb(39, 39, 204);
+}
+
+.submitBtn:focus
+{
+	outline: none;
+}
+
+.submitBtnHolder
+{
+	padding-top: 25px;
+	padding-left: 17em;
+}
+
+.endForm > p
+{
+	padding-left: 20px;
+}
+
+.endForm > hr
+{
+	width: 95%;
+}
+
+.footer
+{
+	text-align: center;
+	background-color: rgba(18, 46, 75, 0.9);
+	color: white;
+	border-radius: 20px;
+	width: 90%;
+	margin: auto;
+}
+
+/* Tag styles */
+body
+{
+	/* background-color: #6F6F6F; */
+	background-image: url("images/background.jpg");
+	background-size: cover;
+}
+
+input, select
+{
+	margin: 10px;
+	margin-left: 40px;
+	font-size: 20px;
+}

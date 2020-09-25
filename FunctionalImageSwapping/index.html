@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Functional Image Swapping</title>
+		<link href="css-styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="imageHolder">
+			<img id="largeImg">
+			
+			<div id="fourImgs">
+				<img src="images/img1.jpg" id="img1" onClick="changeImage(document.getElementById('img1').src)">
+				<img src="images/img2.jpg" id="img2" onClick="changeImage(document.getElementById('img2').src)">
+				<img src="images/img3.jpg" id="img3" onClick="changeImage(document.getElementById('img3').src)">
+				<img src="images/img4.jpg" id="img4" onClick="changeImage(document.getElementById('img4').src)">
+			</div>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+</html>

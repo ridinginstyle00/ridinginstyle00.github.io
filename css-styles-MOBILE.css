@@ -1,4 +1,4 @@
-@media only screen and (max-width: 480px) and (min-width: 144px)
+@media only screen and (max-width: 480px) and (min-width: 144px) and (orientation: portrait)
 {
     
     /* HTML Tag styles */
@@ -7,20 +7,135 @@
         background-color: lightgray;
     }
 
+    li
+    {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
 
     /* Class Styles */
     .container
     {
         margin: auto;
-        height: 90vh;
-        widtH: 50vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding-bottom: 5vh;
+
+        height: auto;
+        width: 85vw;
         background-color: black;
+        border-radius: 5vh;
     }
 
     .header
     {
+        margin: auto;
+        padding-top: 5vh;
+        background-color: white;
+        text-align: center;
+        width: 80vw;
+        font-size: 5vh;
+        line-height: 5vh;
+        height: 10vh;
+        font-weight: bold;
+        border-top-right-radius: 5vh;
+        border-top-left-radius: 5vh;
+    }
+
+    .headerDesc
+    {
+        padding-top: 5vh;
+        margin: auto;
+        text-align: left;
+        width: 60vw;
+        font-size: 3vh;
+        line-height: 3vh;
+    }
+
+    .buttonHolders
+    {
+        padding-top: 5vh;
+    }
+
+    .siteButton
+    {
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+        font-size: 3vh;
+        width: 75vw;
+    }
+
+    .siteButton > li
+    {
+        background-color: darkblue;
+        color: white; 
+        padding: 1vw;
+        transition: 0.3s;
+    }
+
+    .siteButton > li:hover
+    {
+        background-color: rgb(1, 1, 37);
+    }
+
+    .siteButton > li:active
+    {
+        background-color: rgb(76, 76, 223);
+        transition: 0.1s;
+    }
+
+    .siteButton > li:focus + .siteDesc
+    {
+        height: auto;
+        opacity: 1;
+        padding: 1vh;
+    }
+
+    .siteButton > .siteDesc:focus
+    {
+        height: auto;
+        opacity: 1;
+        padding: 1vw;
+        outline: none;
+    }
+
+    .siteButton > .siteDesc
+    {
+        display: block;
+        background-color: lightblue;
+        width: auto;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+
+        transition: .5s ease-in-out;
+    }
+
+    .goToSiteBtn
+    {
+        margin-top: 1.5vh;
+        padding: 1vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        float: right;
+        background-color: rgb(10, 5, 83);
         color: white;
-        background-color: black;
+        border-radius: 1vh;
+        text-align: center;
+        transition: .3s;
+        user-select: none;
+    }
+
+    .goToSiteBtn:hover
+    {
+        background-color: rgb(25, 11, 218);
+    }
+
+    .goToSiteBtn:active
+    {
+        background-color: rgb(10, 5, 83);
+        transition: .05s;
     }
 
 }

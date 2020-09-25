@@ -36,7 +36,7 @@
         text-align: center;
         width: 80vw;
         font-size: 5vh;
-        line-height: 5vh;
+        line-height: 10hw;
         height: 10vh;
         font-weight: bold;
         border-top-right-radius: 5vh;
@@ -45,7 +45,7 @@
 
     .headerDesc
     {
-        padding-top: 5vh;
+        padding-top: 10vh;
         margin: auto;
         text-align: left;
         width: 60vw;
@@ -62,7 +62,7 @@
     {
         padding-left: 2.5vw;
         padding-right: 2.5vw;
-        font-size: 5vw;
+        font-size: 3vh;
         width: 75vw;
     }
 

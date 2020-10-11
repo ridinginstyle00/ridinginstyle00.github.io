@@ -66,6 +66,7 @@
         padding-right: 2.5vw;
         font-size: 3vh;
         width: 75vw;
+        border-bottom: 5px solid white;
     }
 
     .siteButton > li

@@ -27,14 +27,4 @@ window.addEventListener('load', function()
             window.open(siteURLS[e.target.value], '_blank');
         });
     }
-
-    for (var i = 0; i < siteDesc.length; i++)
-    {
-        var clickedSiteDesc = siteDesc[i];
-
-        clickedSiteDesc.addEventListener('click', function(e)
-        {
-            e.target.id.scrollIntoView();
-        });
-    }
 });

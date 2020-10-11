@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cheech's Pizza</title>
+		<link href="css-style.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div class="form-holder">
+			<div class="title">
+				<h1>Cheech's Pizza</h1>
+				<h3>Subtitle/Slogan</h3>
+				<h3>###-###-####</h3>
+			</div>
+			
+			<form id="pizzaForm" name="pizzaForm" action="thankyou.html">
+				<div class="twoItemGroup">
+					<div class="column1">
+						<h2 class="itemTitle, nameAndNum">Name</h2>
+						<div class="requiredFormItem" id="fixName"></div>
+						<input type="text" placeholder="Enter name here" id="custName" name="custName">
+					</div>
+					<div class="column2">
+						<h2 class="itemTitle">Phone Number</h2>
+						<div class="requiredFormItem" id="fixNum"></div>
+						<input type="text" placeholder="###-###-####" id="phoneNum" name="phoneNum">
+					</div>
+				</div>
+				
+				<div class="twoItemGroup">
+					<div class="column1">
+						<h2 class="itemTitle, nameAndNum">Number of Pizzas</h2>
+						<div class="requiredFormItem" id="fixPizNum"></div>
+						<select class="selection-range" id="numOfPizzas" name="numOfPizzas">
+							<option disabled selected value> Select an option </option>
+						</select>
+					</div>
+					<div class="column2">
+						<h2 class="itemTitle">Type of Pizza</h2>
+						<div class="requiredFormItem" id="fixPizType"></div>
+						<select class="selection-range" id="typeOfPizza" name="typeOfPizza">
+							<option disabled selected value> Select an option </option>
+						</select>
+					</div>
+				</div>
+
+				<div class="submitBtnHolder">
+					<input type="submit" value="Submit Order" onclick="return submitOrder(this.form)" class="submitBtn" name="submitBtn">
+				</div>
+			</form>
+			<div class="endForm" id="endForm"></div>	
+
+			<div class="footer">Created by Quinn Ridings for OTC-CIS-131</div>
+		</div>
+	</body>
+	<script src="form-script.js"></script>
+</html>

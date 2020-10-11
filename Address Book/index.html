@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Address Book</title>
+		<link href="css-style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+		<div class="container">
+
+			<div class="twoItemGroup">
+				<div class="column1">
+					<img id="selectedAddressImg" src="">
+					<h2 id="selectedAddressName"></h2>
+					<h4 id="SelectedAddressEmail"></h4>
+				</div>
+				<div class="column2" id="contactsList">
+
+				</div>
+			</div>
+			<div class="input-form"><br>
+				<input type="text" placeholder="First Name" id="fNameEntry"><br>
+				<input type="text" placeholder="Last name" id="lNameEntry"><br>
+				<input type="text" placeholder="Email" id="emailEntry"><br>
+				<input type="text" placeholder="Image Names Available: Carole, David, Josh, Mark, Susan" id="imageEntry"><br>
+				<button class="submitBtn" onclick="addContact()">Add contact</button>
+			</div>
+			<div class="footer">Created by Quinn Ridings for OTC-CIS-131</div>
+		</div>
+
+	</body>
+	<script src="script.js"></script>
+</html>

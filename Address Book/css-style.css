@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Class styles */
+.container
+{
+	width: 800px;
+	height: auto;
+	margin: auto;
+	margin-top: 12.5px;
+	background-color: rgba(248, 249, 250, .9);
+	border-radius: 50px;
+}
+
+/* Make all children have the same default padding */
+.container > *, .column1 > *, .column2 > *
+{
+	padding: 10px;
+	padding-left: 20px;
+	margin: auto;
+}
+
+.column1
+{
+	margin-top: 10px;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+	border-top-left-radius: 50px;
+	height: 300px;
+}
+.column2
+{
+	margin-top: 10px;
+	margin-right: 10px;
+	border-bottom: 2px solid;
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
+	height: 275px;
+}
+.column1, .column2
+{
+	background-color: rgba(187, 187, 187, 0.5);
+}
+.column1 > *
+{
+	margin-left: 75px;
+}
+
+.container > h2
+{
+	text-align: center;
+}
+
+.column1
+{
+	float: left;
+	display: block;
+	width: 50%;
+}
+
+.column2 
+{
+	padding-top: 25px;
+}
+
+.submitBtn
+{
+	padding: 10px;
+	background-color: darkblue;
+	color: white;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+.submitBtn:active
+{
+	background-color: rgb(39, 39, 204);
+}
+
+.submitBtn:focus
+{
+	outline: none;
+}
+
+.footer
+{
+	text-align: center;
+	background-color: rgba(18, 46, 75, 0.9);
+	color: white;
+	border-radius: 20px;
+	width: 90%;
+	margin: auto;
+}
+
+.input-form
+{
+	margin-top: -25px;
+}
+
+/* Tag styles */
+body
+{
+	/* background-color: #6F6F6F; */
+	background-image: url("images/background.jpeg");
+	background-position: center;
+	background-size: cover;
+	background-position-y: -25vh;
+}
+
+a
+{
+	line-height: 2;
+}
+
+button
+{
+	margin-bottom: 12.5px;
+	padding: 10px;
+	width: 385px;
+}
+
+input
+{
+	margin-bottom: 12.5px;
+	padding: 10px;
+	width: 360px;
+}

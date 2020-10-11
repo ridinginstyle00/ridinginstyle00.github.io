@@ -1,0 +1,11 @@
+.siteButton
+{
+    border: 1vh solid black;
+    border-bottom: none;
+    margin: auto;
+}
+
+.siteButton:last-child
+{
+    border-bottom: 1vh solid black;
+}

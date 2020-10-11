@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Class styles */
+.title
+{
+	padding-top: 20px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.title > *
+{
+	margin-bottom: -10px;
+}
+
+.form-holder
+{
+	width: 800px;
+	height: auto;
+	margin: auto;
+	background-color: rgba(248, 249, 250, .90);
+	border-radius: 50px;
+}
+
+/* Make all children have the same default padding */
+.form-holder > *, .column1 > *, .column2 > *
+{
+	padding: 10px;
+	padding-left: 20px;
+}
+
+.form-holder > h2
+{
+	text-align: center;
+}
+
+.form-holder > input
+{
+	padding: 10px;
+}
+
+.selection-range
+{
+	padding: 10px;
+	min-width: 279px;
+}
+
+.itemTitle
+{
+	margin-bottom: -10px;
+}
+
+.column1
+{
+	float: left;
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+.endForm
+{
+	height: auto;
+}
+
+.submitBtn
+{
+	padding: 10px;
+	background-color: darkblue;
+	color: white;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+.submitBtn:active
+{
+	background-color: rgb(39, 39, 204);
+}
+
+.submitBtn:focus
+{
+	outline: none;
+}
+
+.submitBtnHolder
+{
+	padding-top: 25px;
+	padding-left: 17em;
+}
+
+.endForm > p
+{
+	padding-left: 20px;
+}
+
+.endForm > hr
+{
+	width: 95%;
+}
+
+.requiredFormItem
+{
+	height: auto;
+	padding: 0;
+	padding-left: 20px;
+	color: red;
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+/* Needed to fix formatting with the introduced form tag */
+.nameAndNum
+{
+	margin-top: 0px;
+	margin-bottom: -10px;
+}
+
+.results
+{
+	margin-top: 50px;
+	margin-left: 50px;
+	text-align: left;
+}
+
+#resultsName, #resultsNum, #resultsNumPiz, #resultsTypePiz, #subtotal, #taxCharged, #total
+{
+	margin-left: 25px;
+}
+
+/* Tag styles */
+body
+{
+	/* background-color: #6F6F6F; */
+	background-image: url("images/background.jpg");
+	background-size: cover;
+}
+
+input, select
+{
+	margin: 10px;
+	margin-left: 40px;
+	font-size: 20px;
+}

@@ -11,7 +11,11 @@ var siteURLS =
     'SubscribeToMyWebsite/index.html',
     'FunctionalImageSwapping/index.html',
     'ImageSwapping-Arrays/index.html',
-    'CheechsPizza/index.html'
+    'CheechsPizza/index.html',
+    'Photo Gallery with Timer/index.html',
+    "Validating - Cheech's Pizza Online Ordering/index.html",
+    'Address Book/index.html',
+    'MidTerm - Tic Tac Toe/index.html'
 ];
 
 window.addEventListener('load', function()

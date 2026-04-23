@@ -17,7 +17,6 @@ var siteURLS =
     'Address Book/index.html',
     'MidTerm - Tic Tac Toe/index.html',
 	'Chalk/index.js',
-	'CurrentWeather/dist/index.html'
 ];
 
 window.addEventListener('load', function()
@@ -30,7 +29,24 @@ window.addEventListener('load', function()
 		
 		if (goToSiteBtn[i].id == "CurrentWeather")
 		{
-
+			eachSiteBtn.addEventListener('click', function(e)
+			{
+				window.open('https://ridinginstyle00-current-weather.netlify.app/', '_blank');
+			});
+		}
+		else if (goToSiteBtn[i].id == "DeployAVueProject")
+		{
+			eachSiteBtn.addEventListener('click', function(e)
+			{
+				window.open('https://ridinginstyle00-deploy.netlify.app/', '_blank');
+			});
+		}
+		else if (goToSiteBtn[i].id == "PopularTVShows")
+		{
+			eachSiteBtn.addEventListener('click', function(e)
+			{
+				window.open('https://ridinginstyle00-populartvshows.netlify.app/', '_blank');
+			});
 		}
 		else
 		{

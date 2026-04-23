@@ -21,60 +21,68 @@ function onLoad() {
 }
 
 function createCells() {
-	//Create the board
-	for (var i = 0; i < 9; i++) {
-		//Creating elements
-		var buttonLink = document.createElement('a');
-		var tableCell = document.createElement('td');
+    for (var i = 0; i < 9; i++) {
+        var tableCell = document.createElement('td');
+        var buttonLink = document.createElement('a');
 
-		//Setting values for elements
-		tableCell.id = i;
+        // 1. Set up the cell
+        tableCell.id = "cell" + i; // Give the cell a unique ID
+        
+        // 2. Set up the link
+        buttonLink.href = "#";
+        buttonLink.id = "link" + i;
+        buttonLink.className = i; // This keeps your checkForWinner logic working
+        buttonLink.style.display = "block"; // Makes the link fill the whole cell
+        buttonLink.style.height = "100%";
+        
+        buttonLink.addEventListener('click', clickedCell);
 
-		buttonLink.href = "#";
-		buttonLink.id = "link" + i;
-		buttonLink.className = i;
-		buttonLink.addEventListener('click', clickedCell);
-		buttonLink.appendChild(tableCell);
+        // 3. Nest them correctly: Row -> Cell -> Link
+        tableCell.appendChild(buttonLink);
 
-		//Creating a 3x3 grid
-		if (i < 3) {
-			row1.appendChild(buttonLink);
-		} else if (i < 6) {
-			row2.appendChild(buttonLink);
-		} else if (i < 9) {
-			row3.appendChild(buttonLink);
-		}
-	}
+        if (i < 3) {
+            row1.appendChild(tableCell);
+        } else if (i < 6) {
+            row2.appendChild(tableCell);
+        } else {
+            row3.appendChild(tableCell);
+        }
+    }
 }
 
 function clickedCell(e) {
-	if (player1Turn === true) {
-		//Switch to player 2 and change text
-		player1Turn = false;
-		playerTurn.innerHTML = "Player 2 - X";
+    // Prevent the page from jumping because of the "#" href
+    e.preventDefault();
 
-		//Get the <a> id and change it to the placed marker
-		document.getElementById("link" + e.target.id).id = "O";
+    // currentTarget is the <a> tag we attached the listener to
+    var activeLink = e.currentTarget;
 
-		//Create and place marker
-		var oImg = document.createElement('img');
-		oImg.src = "images\\O.png";
-		e.target.appendChild(oImg);
-	} else if (player1Turn === false) {
-		//Switch to player 1 and change text
-		player1Turn = true;
-		playerTurn.innerHTML = "Player 1 - O";
+    // Check if the cell is already taken (prevents overwriting)
+    if (activeLink.id === "O" || activeLink.id === "X") {
+        return;
+    }
 
-		//Get the <a> id and change it to the placed marker
-		document.getElementById("link" + e.target.id).id = "X";
+    if (player1Turn === true) {
+        player1Turn = false;
+        playerTurn.innerHTML = "Player 2 - X";
 
-		//Create and place marker
-		var xImg = document.createElement('img');
-		xImg.src = "images\\X.png";
-		e.target.appendChild(xImg);
-	}
+        activeLink.id = "O"; // Change ID for your win-check logic
 
-	checkForWinner();
+        var oImg = document.createElement('img');
+        oImg.src = "images/O.png"; // Use forward slash for web compatibility
+        activeLink.appendChild(oImg);
+    } else if (player1Turn === false) {
+        player1Turn = true;
+        playerTurn.innerHTML = "Player 1 - O";
+
+        activeLink.id = "X"; // Change ID for your win-check logic
+
+        var xImg = document.createElement('img');
+        xImg.src = "images/X.png";
+        activeLink.appendChild(xImg);
+    }
+
+    checkForWinner();
 }
 
 function checkForWinner() {

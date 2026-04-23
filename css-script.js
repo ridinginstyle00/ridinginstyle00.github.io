@@ -15,7 +15,9 @@ var siteURLS =
     'Photo Gallery with Timer/index.html',
     "Validating - Cheech's Pizza Online Ordering/index.html",
     'Address Book/index.html',
-    'MidTerm - Tic Tac Toe/index.html'
+    'MidTerm - Tic Tac Toe/index.html',
+	'Chalk/index.js',
+	'CurrentWeather/dist/index.html'
 ];
 
 window.addEventListener('load', function()
@@ -25,10 +27,17 @@ window.addEventListener('load', function()
         var eachSiteBtn = goToSiteBtn[i];
 
         goToSiteBtn[i].value = i;
+		
+		if (goToSiteBtn[i].id == "CurrentWeather")
+		{
 
-        eachSiteBtn.addEventListener('click', function(e)
-        {
-            window.open(siteURLS[e.target.value], '_blank');
-        });
+		}
+		else
+		{
+			eachSiteBtn.addEventListener('click', function(e)
+			{
+				window.open(siteURLS[e.target.value], '_blank');
+			});
+		}		
     }
 });

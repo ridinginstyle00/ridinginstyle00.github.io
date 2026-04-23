@@ -16,7 +16,7 @@ var siteURLS =
     "Validating - Cheech's Pizza Online Ordering/index.html",
     'Address Book/index.html',
     'MidTerm - Tic Tac Toe/index.html',
-	'Chalk/index.js',
+	'Chalk/index.html',
 ];
 
 window.addEventListener('load', function()

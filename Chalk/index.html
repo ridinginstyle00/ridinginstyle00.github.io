@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chalk Story - Quinn Ridings</title>
+    <style>
+        body { background-color: #121212; color: #e0e0e0; font-family: monospace; padding: 20px; }
+        
+        /* The Notice Box */
+        #console-notice { 
+            background-color: #1a1a1a; 
+            border: 2px solid #00ff00; 
+            padding: 15px; 
+            margin-bottom: 30px; 
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+        }
+        .prompt { color: #00ff00; font-weight: bold; }
+        kbd { background: #333; padding: 2px 5px; border-radius: 3px; color: #fff; border: 1px solid #555; }
+
+        #story-container { white-space: pre; font-size: 14px; line-height: 1.2; }
+    </style>
+</head>
+<body>
+
+    <div id="console-notice">
+        <span class="prompt">></span> <strong>IMPORTANT:</strong> This page was designed to be ran in a console. For the original viewing experience:
+        <br><br>
+        1. Press <kbd>F12</kbd> or <kbd>Ctrl+Shift+I</kbd> (Cmd+Option+I on Mac).
+        <br>
+        2. Click the <strong>"Console"</strong> tab at the top of the panel.
+    </div>
+
+    <div id="story-container"></div>
+
+    <script type="module">
+        // 1. Import Chalk and AnsiUp from CDNs
+        import chalk from 'https://cdn.jsdelivr.net/npm/chalk@5.6.2/+esm';
+        import { AnsiUp } from 'https://cdn.jsdelivr.net/npm/ansi_up@6.0.6/+esm';
+
+        const ansiUp = new AnsiUp();
+
+        // 2. Your Original Logic (Modified for browser import)
+        const jerry = chalk.green;
+        const jerryThought = chalk.bgHex('#FFC0CB').black.bold;
+        const boss = chalk.cyanBright;
+        const operator = chalk.italic.bold.hex('FFA8FD');
+        const operatorVoice = chalk.bgHex('#FFFFFF').black.bold;
+
+        // 3. Generate the "Chalked" string
+        const chalkOutput = chalk.bgBlack.white(`
+
+|===========================================================|
+|                                                           |
+|   Jerry woke up this morning half off his bed.            |
+|                                                           |
+|   He coughed as he leaned up to turn off his alarm.       |
+|                                                           |
+|   ` + jerry(`   It's already 6:00?`) + `                                   |
+|                                                           |
+|   He says as he groans.                                   |
+|                                                           |
+|   He goes through his morning routine,                    |
+|        brushin' his teeth,                                |
+|        and combing his greasy hair.                       |
+|                                                           |
+|   He leaves to take his bike to the nearest business to   |
+|        where he lives, which is still about 20 minutes    |
+|        by bike.                                           |
+|                                                           |
+|   ` + boss(`   Hey Jerry! Ready to start in the kitchen?`) + `            |
+|                                                           |
+|   Yells Jerry's boss.                                     |
+|                                                           |
+|   ` + jerry(`   Yeah! I'll be there after I put my belongings away!`) + `  |
+|                                                           |
+|   After putting everything away and starting to clean the |
+|        restaurant's dishes in the kitchen. Jerry's day    |
+|        started going by slower and slower                 |
+|                                                           |
+|   Eventually, Jerry started to feel a little weird.       |
+|                                                           |
+|     ` + jerryThought(` Huh? What's going on? `) + `                               |
+|     ` + jerryThought(`I thought this wasn't supposed to happen anymore?`) + `     |
+|                                                           |
+|  Things started getting distorted and warped.          | 
+|                                                           |      
+| This was happening in almost an electronical kind of    |  
+|        way. It seemed like his eyes were glitching on him.   |
+|                                                           |        
+| ` + jerryThought(` Seriously? Guess it still failed.`) + `              |            
+|  ` + jerryThought(` I thought we worked out all the kinks? `) + `             |   
+|                                                           |         
+| ` + operatorVoice(` Unfortunately not, back to the drawing board then. `) + `  |   
+|    ` + operatorVoice(' Here let me shut it all down. ') + `                      |     
+|                                                           |
+| Said a mysterious voice.                                  |
+|                                   |                     
+|  After they said that everything started shifting          |
+|     back to normal, and started to fade.                   | 
+|                                                           |
+|   A bright light filled Jerry's eyes and he winced at     |
+|        the change in lighting.                            |
+|                                                           |
+|   ` + operator(`   Feelin' alright?`) + `                                     |
+|                                                           |
+|   Jerry heard from a somewhat familiar voice.             |
+|                                                           |
+|   ` + jerry(`   Yeah yeah, I'm fine Operator.                        ` + chalk.white('|') + `
+` + chalk.white('|') + `      We'll work out the kinks and try it again tomorrow.  ` + chalk.white('|') + `
+` + chalk.white('|') + `      Alright?`) + `                                             |
+|                                                           |
+|   ` + operator('   Alright. ') + `                                            |
+|                                                           |
+|   ` + jerry(`   Oh and Operator?`) + `                                     |
+|                                                           |
+|   ` + operator('   Yes? ') + `                                                |
+|                                                           |
+|   ` + jerry(`   From now on in test runs, let's NOT give me a dude`) + `   |
+|   ` + jerry('     who has to bike to work? Makes for an easier test.') + ` |
+|                                                           |
+|   The operator laughed, and while smiling he said;        |
+|                                                           |
+|   ` + operator('   Alright, fair enough') + `                                 |
+|                                                           |
+|                           ` + chalk.bold.italic.underline(' FIN ') + `                           |
+|===========================================================|
+`);
+
+        // Log to console
+        console.log(chalkOutput);
+
+        // Render to page
+        const htmlOutput = ansiUp.ansi_to_html(chalkOutput);
+        document.getElementById('story-container').innerHTML = htmlOutput;
+    </script>
+</body>
+</html>
